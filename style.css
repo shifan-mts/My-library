@@ -1,0 +1,139 @@
+html{
+    background-color: black;
+}
+
+nav{
+    position: fixed-top;
+}
+.nav2 {
+    display: flex; /* Make it a flex container */
+    justify-content: space-between; /* Place items at opposite ends */
+    align-items: center; /* Align items vertically in the center */
+    padding: 10px 20px; /* Add padding for spacing */
+    background-color: black; /* Optional: for better visibility */
+}
+.container1{
+    padding: 1vh;
+    display: flex;
+    
+   
+    
+}
+.page-title{
+     
+    color: white;
+    font-size: 5rem;
+    padding-top: 7px;
+    
+}
+.input-btn{
+    display: flex;
+    font-size: 2rem;
+    background-color: yellow;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 5px;
+    cursor:pointer;
+}
+.books-box{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid rgb(255, 204, 0);
+}
+.book{
+    
+    margin: 10px;
+    gap: 10px;
+    border: 1px solid white;
+}
+.boo{
+    display: flex;
+    justify-content: center;
+}
+.book-img{
+    
+    height: 200px;
+    width: 200px;
+    
+    
+}
+.book-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* Makes the image cover the container without distortion */
+    border-radius: 5px; /* Optional: to add rounded corners */
+}
+.book-title{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    text-wrap: wrap;
+
+}
+.checkbox-panel{
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    content: "Read";
+    
+}
+.read-info{
+    font-size: 1rem;
+    padding-top:1px ;
+}
+
+.popup>form{
+    display: flex;
+    flex-direction: column;
+
+
+}
+form{
+    min-width: 100px;
+}
+.container2{
+   
+    width: 22vh;
+    height: 70%;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 2rem;
+    border-radius: 1rem;
+    background: #ddd6f3; 
+    background: -webkit-linear-gradient(to right, #ddd6f3, #faaca8); 
+    background: linear-gradient(to right, #ddd6f3, #ef8781); 
+}
+.popup{
+   
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.form-prop{
+    height: 2rem;
+    border: 2px solid blue;
+    padding: 0.5rem;
+    margin: 0.7rem;
+    border-radius: 0.5rem;
+}
+
+
+.popcontainer {
+    display: none;
+    position: fixed; /* Makes it relative to the viewport */
+    top: 50%; /* Centers vertically */
+    left: 50%; /* Centers horizontally */
+    transform: translate(-50%, -50%); /* Adjusts the center to the middle of the element */
+    z-index: 1000; /* Ensures it appears above other content */
+    background-color: white; /* Optional: Add background color */
+    padding: 20px; /* Optional: Add padding for spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for better visibility */
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+
+
+    
+   
+
