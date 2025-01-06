@@ -16,7 +16,7 @@ s.addEventListener("click",()=>{
 submit.addEventListener("click",(e)=>{
     popup.style= "display:none;";
     e.preventDefault();
-    createBook(bname.value,img2.value,checkbox.value);
+    createBook(bname.value,img2.value,checkbox.checked);
     form.reset();
     
 });
@@ -29,7 +29,8 @@ function createBook(title,img,readinfo){
     let readInfo = document.createElement("div");
     booktitle.textContent = title;
     imgcont.src = img;
-    if(readinfo.checked){
+    console.log("readinfo.checked",readinfo);
+    if(readinfo){
         readInfo.textContent = "Read";
 
         readInfo.style = "color:green;";
